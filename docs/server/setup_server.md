@@ -31,8 +31,6 @@ set SERVER_CONFIG=serverDZ.cfg
 set SERVER_CPU=2
 ::   Server profile name
 set SERVER_PROFILE=profiles
-::   Add mods in here 
-set MODS=@mod1;@mod2
 
 cd "%SERVER_PATH%"
 echo Starting DayZ server...
@@ -42,7 +40,7 @@ start /wait "DayZ Server" "DayZServer_x64.exe" ^
     -port=%SERVER_PORT% ^
     -profiles=%SERVER_PROFILE% ^
     -cpuCount=%SERVER_CPU% ^
-    -mod=%MODS% ^
+    "-mod=@mod1;@mod2" ^
     -dologs ^
     -adminlog ^
     -netlog ^
