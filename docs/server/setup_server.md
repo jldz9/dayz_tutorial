@@ -65,7 +65,7 @@ Double click on `start.bat` and you should see DayZ Server start and running, cl
 ### **Server Configuration**
 Once you make sure your server is runnable, it's time to config your server. Still, Bohemia Interactive provide [explanation](https://community.bistudio.com/wiki/DayZ:Server_Configuration) of the latest server config parameters. 
 
-Open the ServerDZ.cfg under your DayZ Server root folder to config the server accordingly. Now you should able to start your server and login in your server! 
+Open the ServerDZ.cfg under your DayZ Server root folder to config the server accordingly. Now you should able to start your server and login! 
 
 ![server_config](imgs/servercfg.png)
 ![Start server](imgs/start_server.gif)
@@ -75,7 +75,7 @@ You could find your own server under LAN section and you should be able to login
 
 ![Play DayZ](imgs/login_preview.gif)
 
-Now is time to move to next step and [mod your server](../modding/adding_mods.md) now!
+Now is time to move to next step and [mod your server](../modding/adding_mods.md)!
 
 ## Linux 
 > This is the hard path :skull:

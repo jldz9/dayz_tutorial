@@ -1,5 +1,5 @@
 It is rare for people play vanilla DayZ, modding the game is somehow the **must have** to improve the gaming experience.
-The modding of this tutorial is through the [DayZ steam workshop](https://steamcommunity.com/app/221100/workshop/). 
+Good thing is we have [DayZ steam workshop](https://steamcommunity.com/app/221100/workshop/) to make modding easier. 
 
 ## **Downloading mods**
 You can casually browse through the DayZ workshop and find whatever mods that interest you. 
@@ -14,7 +14,7 @@ Go to your root folder of DayZ game (NOT DayZ Server!) > Click into `!Workshop` 
 
 ![Find_download_mods](imgs/find_mods.gif)
 
-Go to your DayZ Server root folder this time and paste these mods you into DayZ Server root folder
+Go to your DayZ Server root folder this time and paste these mods into DayZ Server root folder.
 
 ![Paste mods](imgs/paste_mods.gif)
 
