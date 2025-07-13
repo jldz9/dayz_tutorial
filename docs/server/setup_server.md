@@ -74,7 +74,7 @@ Open the ServerDZ.cfg in your DayZ Server root folder to config the server accor
 
 You should able to find your own server under LAN section od  DayZ server browser and you should be able to login to your own server.
 
-![Play DayZ](imgs/login.gif)
+![Play DayZ](imgs/login_preview.gif)
 
 It's time to [mod your server](../modding/adding_mods.md) now!
 
