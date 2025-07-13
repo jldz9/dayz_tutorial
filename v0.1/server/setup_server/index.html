@@ -733,28 +733,26 @@
 </span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="k">set</span> <span class="nv">SERVER_CPU</span><span class="p">=</span>2
 </span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="p">:</span><span class="c1">:   Server profile name</span>
 </span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="k">set</span> <span class="nv">SERVER_PROFILE</span><span class="p">=</span>profiles
-</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="p">:</span><span class="c1">:   Add mods in here </span>
-</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="k">set</span> <span class="nv">MODS</span><span class="p">=</span>@mod1;@mod2
-</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>
-</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="k">cd</span> <span class="s2">&quot;</span><span class="nv">%SERVER_PATH%</span><span class="s2">&quot;</span>
-</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="k">echo</span> Starting DayZ server...
-</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="p">:</span><span class="c1">:Launch parameters</span>
-</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="k">start</span> /wait <span class="s2">&quot;DayZ Server&quot;</span> <span class="s2">&quot;DayZServer_x64.exe&quot;</span> <span class="se">^</span>
-</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="se"> </span>   -config=<span class="nv">%SERVER_CONFIG%</span> <span class="se">^</span>
-</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="se"> </span>   -port=<span class="nv">%SERVER_PORT%</span> <span class="se">^</span>
-</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a><span class="se"> </span>   -profiles=<span class="nv">%SERVER_PROFILE%</span> <span class="se">^</span>
-</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a><span class="se"> </span>   -cpuCount=<span class="nv">%SERVER_CPU%</span> <span class="se">^</span>
-</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a><span class="se"> </span>   -mods=<span class="nv">%MODS%</span> <span class="se">^</span>
-</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a><span class="se"> </span>   -dologs <span class="se">^</span>
-</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a><span class="se"> </span>   -adminlog <span class="se">^</span>
-</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a><span class="se"> </span>   -netlog <span class="se">^</span>
-</span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a><span class="se"> </span>   -freezecheck 
-</span><span id="__span-0-30"><a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a>
-</span><span id="__span-0-31"><a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a><span class="k">echo</span> [WARN] Server exited or crashed. Restarting in 5 seconds...    
-</span><span id="__span-0-32"><a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a><span class="p">:</span><span class="c1">:Time in seconds before kill server process (5s)</span>
-</span><span id="__span-0-33"><a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a>timeout 5
-</span><span id="__span-0-34"><a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a><span class="p">:</span><span class="c1">:Go back and restart the server</span>
-</span><span id="__span-0-35"><a id="__codelineno-0-35" name="__codelineno-0-35" href="#__codelineno-0-35"></a><span class="k">goto</span> <span class="nl">start</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="k">cd</span> <span class="s2">&quot;</span><span class="nv">%SERVER_PATH%</span><span class="s2">&quot;</span>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="k">echo</span> Starting DayZ server...
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="p">:</span><span class="c1">:Launch parameters</span>
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="k">start</span> /wait <span class="s2">&quot;DayZ Server&quot;</span> <span class="s2">&quot;DayZServer_x64.exe&quot;</span> <span class="se">^</span>
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="se"> </span>   -config=<span class="nv">%SERVER_CONFIG%</span> <span class="se">^</span>
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="se"> </span>   -port=<span class="nv">%SERVER_PORT%</span> <span class="se">^</span>
+</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="se"> </span>   -profiles=<span class="nv">%SERVER_PROFILE%</span> <span class="se">^</span>
+</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="se"> </span>   -cpuCount=<span class="nv">%SERVER_CPU%</span> <span class="se">^</span>
+</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a><span class="se"> </span>   <span class="s2">&quot;-mod=@mod1;@mod2&quot;</span> <span class="se">^</span>
+</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a><span class="se"> </span>   -dologs <span class="se">^</span>
+</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a><span class="se"> </span>   -adminlog <span class="se">^</span>
+</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a><span class="se"> </span>   -netlog <span class="se">^</span>
+</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a><span class="se"> </span>   -freezecheck 
+</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a>
+</span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a><span class="k">echo</span> [WARN] Server exited or crashed. Restarting in 5 seconds...    
+</span><span id="__span-0-30"><a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a><span class="p">:</span><span class="c1">:Time in seconds before kill server process (5s)</span>
+</span><span id="__span-0-31"><a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a>timeout 5
+</span><span id="__span-0-32"><a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a><span class="p">:</span><span class="c1">:Go back and restart the server</span>
+</span><span id="__span-0-33"><a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a><span class="k">goto</span> <span class="nl">start</span>
 </span></code></pre></div>
 <p>You may copy this script to create <code>start.bat</code> by yourself or <a href="https://github.com/jldz9/dayz_tutorial/blob/main/start.bat">Download</a> it on github page. 
 Make sure to put it under your DayZServer root folder.</p>
