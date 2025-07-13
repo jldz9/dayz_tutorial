@@ -42,7 +42,7 @@ start /wait "DayZ Server" "DayZServer_x64.exe" ^
     -port=%SERVER_PORT% ^
     -profiles=%SERVER_PROFILE% ^
     -cpuCount=%SERVER_CPU% ^
-    -mods=%MODS% ^
+    -mod=%MODS% ^
     -dologs ^
     -adminlog ^
     -netlog ^
